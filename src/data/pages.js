@@ -22,7 +22,7 @@ const getPages = () => {
             ]
         },
         {
-            name: 'BOOKSTORE MANAGEMENT', type: 'personal project', src: 'book-store.src',
+            name: 'BOOKSTORE MANAGEMENT', type: 'personal project', src: 'bookstore.src',
             desc: 'Manage products, sales, categories,... No client side',
             tech: [
                 <NameLabel name={'ASP.NET Framework'} />,
