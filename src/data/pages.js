@@ -4,7 +4,7 @@ import { InfoPage, SkillsPage, ProjectsPage, SoftSkill, NameLabel } from '../com
 const getPages = () => { 
     const projectsInfo = [
         {
-            name: 'CARD GAME', type: 'Personal project', src: 'card-game.src',
+            name: 'CARD GAME', type: 'personal project', src: 'card-game.src',
             desc: 'simple card games where you are all the players',
             tech: [
                 <NameLabel name={'HTML'} img={htmlIcon} />,
@@ -13,7 +13,7 @@ const getPages = () => {
             ]
         },
         {
-            name: 'JEWELRY SHOP', type: 'Personal project', src: 'jewelry.src',
+            name: 'JEWELRY SHOP', type: 'personal project', src: 'jewelry.src',
             desc: 'Typical E-commerce website displaying products, Cart, Accounts,...',
             tech: [
                 <NameLabel name={'ASP.NET Framework'} />,
@@ -22,7 +22,7 @@ const getPages = () => {
             ]
         },
         {
-            name: 'BOOKSTORE MANAGEMENT', type: 'Personal project', src: 'book-store.src',
+            name: 'BOOKSTORE MANAGEMENT', type: 'personal project', src: 'book-store.src',
             desc: 'Manage products, sales, categories,... No client side',
             tech: [
                 <NameLabel name={'ASP.NET Framework'} />,
