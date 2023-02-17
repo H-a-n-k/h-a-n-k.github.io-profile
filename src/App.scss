@@ -73,6 +73,10 @@ a{
   font-family: 'Itim', 'serif';
 }
 
+@mixin carving {
+  font-family: 'MedievalSharp', 'cursive', 'serif';
+}
+
 @mixin icon{
   height: 1.2em;
   margin-right: 5px;
@@ -116,12 +120,77 @@ a{
 
 //
 
+.block-1{
+  height: 95vh;
+}
+
+.block-2 {
+  height: 93vh;
+}
+
+.shadow-ef-1{
+  box-shadow: 10px -5px 5px 5px rgba(0, 0, 0, .33) inset;
+}
+
+.desk-bg{
+  $height: 90%;
+  $width: 90%;
+
+  position: absolute;
+  height: $height;
+  width: $width;
+  top: calc((100% - $height) / 2);
+  left: calc((100% - $width) / 2);
+}
+
+body{
+  background-color: whitesmoke;
+}
+
+//desk
+.desk {
+  @extend .desk-bg;
+  @include flex-center;
+  @include carving;
+
+  background-color: brown;
+  z-index: 100;
+  border-radius: 50px;
+  background-image: url('./imgs/desk-bg.jpg');
+  background-size: cover;
+
+  box-shadow: 0px 15px 15px -15px rgba(0, 0, 0, 0.75), 10px -5px 5px 5px rgba(black, .2) inset;;
+
+  font-size: 2em;
+  color: #4d3737;
+}
+
+//drawer
+.drawer{
+  $height: 94%;
+  $width: 86%;
+
+  @extend .desk-bg;
+
+  position: fixed;
+  height: calc($height - 2%);
+  width: $width;
+  top: calc(100% - $height);
+  left: calc((100% - $width) /2);
+  background-color: black;
+  border-radius: 0 0 20px 20px;
+  border: 15px solid #cca484;
+  background-image: url('./imgs/drawer-bg.jpg');
+  background-size: cover;
+  box-shadow: 2px -3px 25px -5px rgba(0, 0, 0, 0.75) inset;
+}
+
 //main
 .main{
-  @include flex-center;
-  height: 100vh;
-  background-color: whitesmoke;
-  background-size: cover;
+  height: 100%;
+  position: absolute;
+  top: 5%;
+  left: 50%;
 }
 //
 
@@ -149,6 +218,7 @@ a{
   //page
   .page{
     @include flex-center;
+    @extend .shadow-ef-1;
 
     position: absolute;
 
@@ -159,8 +229,7 @@ a{
 
     padding: 0 5px;
     border-radius: 10px;
-    box-shadow: 10px -5px 5px 5px rgba(0, 0, 0, .33) inset;
-
+    
     transform-origin: center left;
     transition: $hide-transition, transform var(--animation-time) ease-in-out;
 
@@ -371,6 +440,12 @@ a{
 
         >*{
           margin-bottom: 10px;
+        }
+
+        .project-name{
+          @include hand-writing;
+          font-weight: bold;
+          font-size: 1.2em;
         }
 
         .techs{

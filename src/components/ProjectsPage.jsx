@@ -8,7 +8,7 @@ const ProjectsPage = ({ project }) => {
             <img src={note} alt="" />
         </div>
         <div className="detail">
-            <p><b>{name}</b></p>
+            <p className='project-name'>{name}</p>
             <p><i>{type}</i></p>
             <div><b>Description:</b> {desc}</div>
             <p><b>Source:</b> <i><a href="https://google.com" target='_blank' rel="noreferrer">{src}</a></i></p>

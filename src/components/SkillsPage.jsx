@@ -1,10 +1,10 @@
 import { nodeIcon, mongodbIcon, sqlserverIcon,
      mysqlIcon, reactIcon, htmlIcon,
-    cssIcon, javascriptIcon, bootstrapIcon } from '../imgs'
+    cssIcon, javascriptIcon, bootstrapIcon, dotnetIcon } from '../imgs'
 import NameLabel  from './nameLabel'
 
 const backEndSkills = [
-    { name: 'Node.js (Express)', img: nodeIcon }, { name: '.NET Framework' }, { name: 'SQLServer', img: sqlserverIcon },
+    { name: 'Node.js (Express)', img: nodeIcon }, { name: 'ASP.NET MVC', img: dotnetIcon }, { name: 'SQLServer', img: sqlserverIcon },
     { name: 'MySQL', img: mysqlIcon }, { name: 'MongoDB', img: mongodbIcon }
 ]
 

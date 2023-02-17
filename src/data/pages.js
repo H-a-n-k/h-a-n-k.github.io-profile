@@ -1,4 +1,4 @@
-import { htmlIcon, cssIcon, javascriptIcon, bootstrapIcon } from '../imgs'
+import { htmlIcon, cssIcon, javascriptIcon, bootstrapIcon, dotnetIcon } from '../imgs'
 import { InfoPage, SkillsPage, ProjectsPage, SoftSkill, NameLabel } from '../components'
 
 const getPages = () => { 
@@ -16,7 +16,7 @@ const getPages = () => {
             name: 'JEWELRY SHOP', type: 'personal project', src: 'jewelry.src',
             desc: 'Typical E-commerce website displaying products, Cart, Accounts,...',
             tech: [
-                <NameLabel name={'ASP.NET Framework'} />,
+                <NameLabel name={'ASP.NET MVC'} img={dotnetIcon} />,
                 <NameLabel name={'Bootstrap'} img={bootstrapIcon} /> ,
                 <NameLabel name={'Javascript'} img={javascriptIcon} />
             ]
@@ -25,7 +25,7 @@ const getPages = () => {
             name: 'BOOKSTORE MANAGEMENT', type: 'personal project', src: 'bookstore.src',
             desc: 'Manage products, sales, categories,... No client side',
             tech: [
-                <NameLabel name={'ASP.NET Framework'} />,
+                <NameLabel name={'ASP.NET MVC'} img={dotnetIcon} />,
                 <NameLabel name={'Bootstrap'} img={bootstrapIcon} />,
                 <NameLabel name={'Javascript'} img={javascriptIcon} />
             ]

@@ -10,10 +10,11 @@ import cssIcon from './css-icon.png'
 import javascriptIcon from './javascript-icon.png'
 import bootstrapIcon from './bootstrap-icon.png'
 import arrow from './arrow_2.png'
+import dotnetIcon from './dotnet-icon.png'
 
 export {
     educationIcon, githubIcon, nodeIcon,
     mongodbIcon, sqlserverIcon, mysqlIcon,
     reactIcon, htmlIcon, cssIcon,
-    javascriptIcon, bootstrapIcon, arrow
+    javascriptIcon, bootstrapIcon, arrow, dotnetIcon
 }
