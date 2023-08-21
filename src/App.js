@@ -18,4 +18,4 @@ export default App;
 
 //TODO
 // Allow-page-turning scroll-position is still hard coded
-//Visual BUG: content shown when page turn too quickly
+//Visual BUG: page content shown when page turn too quickly

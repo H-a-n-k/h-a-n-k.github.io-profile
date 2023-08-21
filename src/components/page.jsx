@@ -25,7 +25,7 @@ const Page = ({ children, page, n, flipped, handleClick, ind }) => {
     }
 
     const handleChangePage = (p) => { 
-        console.log('change page', subInd, subN, p);
+        //console.log('change page', subInd, subN, p);
         if ((subInd < 2 && p < 0) || (subInd >= subN && p > 0)) return;
         turnPage(ind + p);
     }
@@ -36,7 +36,7 @@ const Page = ({ children, page, n, flipped, handleClick, ind }) => {
 
     const turnPage = (ind) => {
         if (window.scrollY < SCROLL_POSITON) { 
-            alert('You need to open the drawer enough before turning pages');
+            alert('Pls scroll down further');
             return;
         }
 

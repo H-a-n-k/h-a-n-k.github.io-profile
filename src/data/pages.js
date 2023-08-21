@@ -1,34 +1,39 @@
-import { htmlIcon, cssIcon, javascriptIcon, bootstrapIcon, dotnetIcon } from '../imgs'
+import { htmlIcon, cssIcon, javascriptIcon, bootstrapIcon, dotnetIcon, nodeIcon, reactIcon } from '../imgs'
 import { InfoPage, SkillsPage, ProjectsPage, SoftSkill, NameLabel } from '../components'
+import lib from '../imgs/library.png'
+import tl from '../imgs/tlmn.png'
+import cake from '../imgs/cake.png'
 
 const getPages = () => { 
     const projectsInfo = [
         {
-            name: 'CARD GAME', type: 'personal project', src: 'card-game.src',
+            name: 'CARD GAME', type: 'personal project', src: 'https://github.com/H-a-n-k/h-a-n-k.github.io/tree/main/tlmn',
             desc: 'simple card games where you are all the players',
             tech: [
                 <NameLabel name={'HTML'} img={htmlIcon} />,
                 <NameLabel name={'CSS'} img={cssIcon} />,
                 <NameLabel name={'Javascript'} img={javascriptIcon} />
-            ]
+            ],
+            thumb: tl
         },
         {
-            name: 'JEWELRY SHOP', type: 'personal project', src: 'jewelry.src',
-            desc: 'Typical E-commerce website displaying products, Cart, Accounts,...',
+            name: 'Library Management System', type: 'School project', src: 'https://github.com/H-a-n-k/LMS2',
+            desc: 'Manage books, employees data. Display to user with searching, sorting, filtering funtionalities',
             tech: [
-                <NameLabel name={'ASP.NET MVC'} img={dotnetIcon} />,
-                <NameLabel name={'Bootstrap'} img={bootstrapIcon} /> ,
-                <NameLabel name={'Javascript'} img={javascriptIcon} />
-            ]
+                <NameLabel name={'Node.js'} img={nodeIcon} />,
+                <NameLabel name={'React.js'} img={reactIcon} /> 
+            ],
+            thumb: lib
         },
         {
-            name: 'BOOKSTORE MANAGEMENT', type: 'personal project', src: 'bookstore.src',
-            desc: 'Manage products, sales, categories,... No client side',
+            name: 'Bakery Project', type: 'School project', src: 'https://github.com/H-a-n-k/Bakery',
+            desc: 'Typical E-Commerce site using .NET MVC pattern. Manage products display, cart, order, review,...',
             tech: [
                 <NameLabel name={'ASP.NET MVC'} img={dotnetIcon} />,
                 <NameLabel name={'Bootstrap'} img={bootstrapIcon} />,
                 <NameLabel name={'Javascript'} img={javascriptIcon} />
-            ]
+            ],
+            thumb: cake
         }
     ]
 

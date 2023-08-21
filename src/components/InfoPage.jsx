@@ -12,8 +12,8 @@ const InfoPage = () => {
             <span>Junior at HUFLIT (Đại học Ngoại Ngữ Tin Học TP.HCM)</span>
         </div>
         <div>
-            <img src={githubIcon} alt="" className="icon" />
-            <b>Github: </b> <i><a href="https://google.com" target='_blank' rel="noreferrer">link.github.io</a></i>
+            <p style={{ marginBottom: '10px'}}><img src={githubIcon} alt="" className="icon" /> <b>Github: </b> <i><a href="https://github.com/H-a-n-k" target='_blank' rel="noreferrer">github.com/H-a-n-k</a></i></p>
+            <p><b>src: </b> <i><a href="https://github.com/H-a-n-k/profile" target='_blank' rel="noreferrer">github.com/H-a-n-k/profile</a></i></p>
         </div>
     </div>
 }
